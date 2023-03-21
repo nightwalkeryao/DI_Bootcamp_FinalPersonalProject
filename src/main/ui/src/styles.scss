@@ -1,1 +1,133 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+}
+
+.btns {
+	/* display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: inline; */
+	display: flex;
+	gap: 2rem;
+	margin-top: 3rem;
+}
+
+.btn-1 {
+	background-color: rgb(255, 187, 51);
+	padding: 0.5rem 1.4rem 0.5rem 1.4rem;
+	border-radius: 10px;
+	font-size: 1rem !important;
+	color: rgb(13, 7, 7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-2 {
+	border: 2px solid rgb(195, 195, 195);
+	padding: 0.5rem 1.4rem 0.5rem 1.4rem;
+	border-radius: 10px;
+	font-size: 1rem !important;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.col-2 img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+	html {
+		font-size: 42%;
+	}
+}
+
+.text {
+	text-align: justify;
+	font-size: 2rem;
+	padding: 2rem;
+
+	h1 {
+		text-align: center;
+	}
+}
+
+.yt-link {
+	color: black;
+	background: rgb(255, 187, 51);
+	width: 300px;
+	height: 48px;
+	position: absolute;
+	left: 50%;
+	margin-top: 10px;
+	transform: translate(-50%);
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.form-group {
+	padding: 1em;
+
+	label {
+		display: block;
+		font-size: 10pt !important;
+	}
+
+	input,
+	input:focus {
+		display: block;
+		border: 1px solid #ccc;
+		padding: 4px 16px;
+		border-radius: 2px;
+		outline: none;
+		width: 100%;
+		opacity: 0.60;
+	}
+
+	input:focus {
+		border-color: rgb(255, 187, 51);
+		border-width: 2px;
+	}
+}
+
+.wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	.leftside {
+		padding-inline: 3em;
+	}
+	.rightside {
+		width: 50%;
+		min-height: 96vh;
+		padding-top: 2em;
+	}
+}
+h1{
+	text-align: center;
+	margin-bottom: 1em;
+	font-size: 28pt !important;
+}
+.illu{
+	padding: 1em 1em 1em 0em;
+	text-align: center;
+}
+.illu img{
+	max-width: 350px;
+}
+.inputs {
+	margin-left: auto;
+	margin-right: auto;
+}

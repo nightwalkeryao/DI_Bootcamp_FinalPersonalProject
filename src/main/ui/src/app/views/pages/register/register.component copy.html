@@ -1,0 +1,53 @@
+
+<div class="wrapper">
+	<div>
+		<h1>Créer un nouveau compte</h1>
+		<div class="illu">
+			<img src='https://i.postimg.cc/1332nh5s/undraw-Login-re-4vu2.png' [routerLink]="'/profile'" border='0' alt='undraw-Login-re-4vu2'/>
+		</div>
+		<form class="inputs">
+			<!-- <div class="row"> -->
+				<!-- <div class="col half-width"> -->
+					<div class="form-group">
+						<label for="username">Nom d'utilisateur</label>
+						<input type="text" class="text-field" id="username" [(ngModel)]="username"  name="username"/>
+					</div>
+					<div class="form-group">
+						<label for="email">E-mail</label>
+						<input type="text" class="text-field" id="email" [(ngModel)]="email"  name="email"/>
+					</div>
+					<div class="form-group">
+						<label for="password">Mot de passe</label>
+						<input type="password" class="text-field" id="password" [(ngModel)]="password"  name="password"/>
+					</div>
+					<div class="form-group">
+						<label for="role">Je m'inscris pour être...</label>
+						<select name="role" id="role" [(ngModel)]="role">
+							<option value="">Sélectionnez un rôle</option>
+							<option value="1">Mentor</option>
+							<option value="2">Stagiaire</option>
+							<option value="3">Recruteur</option>
+						</select>
+					</div>
+				<!-- </div>
+				<div class="col half-width"> -->
+					<div class="form-group">
+						<label for="lastname">Nom de famille</label>
+						<input type="text" class="text-field" id="lastname" [(ngModel)]="lastname"  name="lastname"/>
+					</div>
+					<div class="form-group">
+						<label for="firstname">Prénoms</label>
+						<input type="text" class="text-field" id="firstname" [(ngModel)]="firstname"  name="firstname"/>
+					</div>
+					<div class="form-group">
+						<label for="city">Ville</label>
+						<input type="text" class="text-field" id="city" [(ngModel)]="city"  name="city"/>
+					</div>
+				<!-- </div> -->
+			<!-- </div> -->
+			<btn [text]="'Soumettre'" (click)="handleSubmit($event)"></btn>
+			<br>
+			<btn [routerLink]="'/login'" [theme]="'light'" [text]="'Connexion'"></btn>
+		</form>
+	</div>
+</div>

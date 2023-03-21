@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+		"name": "Mentor",
+		"path": "/mentors"
+    }, {
+		"id": 2,
+		"name": "Débutant",
+		"path": "/mentored"
+	}, {
+		"id": 3,
+		"name": "Recruteur",
+		"path": "/recruiters"
+	}
+]

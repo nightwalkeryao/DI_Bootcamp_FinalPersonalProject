@@ -1,0 +1,25 @@
+<p-menubar [model]="items" [style]="{backgoundColor: '--var(--primary-color)'}" [styleClass]="'bg-orange'">
+	<ng-template pTemplate="start">
+		<img src="https://i.postimg.cc/7LFgncR4/fox.png" height="40" class="mr-2" [routerLink]="'/'">
+		<span class="form-group" style="display: inline-block; padding-top: 0; margin-top: 0;">
+			<input type="search" pInputText placeholder="Un membre, une techno, ..." class="text-field p-inputtext-lg" style="width: 350px;">
+		</span>
+	</ng-template>
+
+	<ng-template pTemplate="end">
+		<div class="grid row">
+			<div class="col-3 md:col-3 profile-pic">
+				<p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png"
+					styleClass="mr-2" shape="circle" size="large"></p-avatar>
+			</div>
+			<div class="col-9 md:col-9 username">
+				<strong [routerLink]="'/app/profile'">Nightwalker Yao</strong>
+				<br>
+				<small>ID: 873247908</small>
+			</div>
+		</div>
+	</ng-template>
+</p-menubar>
+<div class="container main-page-content">
+	<router-outlet></router-outlet>
+</div>

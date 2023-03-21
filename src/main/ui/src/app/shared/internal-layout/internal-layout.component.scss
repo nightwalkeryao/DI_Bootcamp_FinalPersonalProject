@@ -1,0 +1,29 @@
+.row{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.profile-pic{
+	padding-right: .75em;
+}
+.username strong{
+	color:rgb(20, 19, 17);
+	font-size: 11pt;
+	font-weight: 700;
+}
+:host ::ng-deep .text-field, .text-field:focus{
+	font-size: 11pt;
+	padding: 8px;
+	border-radius: 2px;
+}
+.form-group{
+	padding-left: 4em;
+}
+.main-page-content{
+	max-width: 75vw;
+	margin-inline: auto;
+}
+:host ::ng-deep .bg-orange{
+	background-color: #FFC107;
+}

@@ -1,0 +1,16 @@
+<br>
+<div class="grid">
+	<div class="col" *ngFor="let mentor of mentors">
+		<p-card [header]="mentor.name" [style]="{'width': '350px', 'height': '360px', 'margin-bottom': '2em', 'padding-top': '12px', 'text-align': 'center'}" styleClass="user-card">
+			<ng-template pTemplate="header">
+				<img alt="Card" [src]="mentor.profilePicture" [routerLink]="'/app/mentors/'+mentor.id" />
+			</ng-template>
+			<p align="center">
+				{{ mentor.technos.join(', ') }}
+				<br>
+				<br>
+				<p-button label="Voir le profil" icon="pi pi-eye" iconPos="left" class="p-button-outlined p-button-warning" (click)="setAsMentor(mentor)"></p-button>
+			</p>
+		</p-card>
+	</div>
+</div>

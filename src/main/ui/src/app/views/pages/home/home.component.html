@@ -1,0 +1,69 @@
+
+<section class="original">
+	<header>
+		<div class="logo">
+			<img src="https://i.postimg.cc/7LFgncR4/fox.png" alt="logo">
+			<h2>Devs.club</h2>
+		</div>
+		<nav class="original">
+			<ul ngClass="{'open': navOpen}">
+				<li>
+					<a [routerLink]="'/app/mentors'">Mentors</a>
+				</li>
+				<li>
+					<a href="#">Débutants</a>
+				</li>
+				<li>
+					<a href="#">Emplois</a>
+				</li>
+				<li>
+					<a href="#">Evènements</a>
+				</li>
+				<li>
+					<a href="#how-it-works">Comment ça marche ?</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="sign-in-btn">
+			<a [routerLink]="'/login'" class="btn" href="">Connexion</a>
+			<div class="icon" (click)="toggleNav()">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+	</header>
+	<div class="grid-two">
+		<div class="col-1">
+			<h3>Bienvenue au club des Développeurs</h3>
+			<h1>
+				Apprenez et montez en compétence auprès des meilleurs experts <br> du domaine <span><i class="fa-solid fa-arrow-trend-up text-orange-400"></i></span>
+			</h1>
+			<p>
+				Plutôt freelancer ou recruteur ? Nous sommes tout à vous !
+			</p>
+			<div class="btns">
+				<a [routerLink]="'/register'" class="btn-1">Je veux un mentor</a>
+				<a [routerLink]="'/register'" class="btn-2">Je recrute</a>
+			</div>
+		</div>
+		<div class="col-2">
+			<img src="https://i.postimg.cc/nVv10FZP/st.jpg" alt="">
+		</div>
+	</div>
+</section>
+<section class="--original" id="how-it-works">
+	<h1>Comment ça marche ?</h1>
+	<p class="text-container">
+		Developers Club facilite la mise en relation entre les développeurs et les employeurs, favorise l'évolution de carrière des développeurs en leur donnant accès à des mentors expérimentés, et crée une communauté solide de professionnels du développement
+	</p>
+	<br>
+	<a class="yt-link" href="https://youtube.com">Visualiser la démo</a>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+	<home-blocks></home-blocks>
+</div>

@@ -1,0 +1,152 @@
+<br>
+<p-fieldset legend="Nightwalker Yao">
+	<div class="row">
+		<div class="photo-col">
+			<img src="/assets/images/users/blank.png" alt="" width="128">
+		</div>
+		<div class="details-col">
+			<h1 class="title">Aspirant <em>Développeur backend</em> et technologies associées</h1>
+			<div class="summary">
+				<p>
+					<i class="pi pi-book"></i> <span>Apprend <b>Node.js</b> et <b>MongoDB</b></span>
+				</p>
+				<p>
+					<i class="pi pi-envelope"></i> <span>nw.yao@devs.club</span>
+				</p>
+				<p>
+					<i class="pi pi-map-marker"></i> <span>Abidjan, CIV</span>
+				</p>
+			</div>
+		</div>
+	</div>
+</p-fieldset>
+<br>
+<div class="card">
+	<p-tabView styleClass="tabview-custom">
+		<p-tabPanel header="Compétences">
+			<ng-template pTemplate="header">
+				<i class="pi pi-tag"></i>
+				<span style="margin-left: .7em;">Compétences</span>
+			</ng-template>
+			<div class="card">
+				<div class="row skills-block">
+					<div class="skill-card" *ngFor="let skill of skills">
+						<div class="skill-grid-item card">
+							<div class="skill-grid-item-content">
+								<img [src]="skill.techno.logo"
+									[alt]="skill.techno.name" width="128" />
+								<div class="skill-name">{{skill.techno.name}}</div>
+								<div class="skill-description">{{skill.experience}} ans d'experience</div>
+								<p-rating [ngModel]="skill.level" [readonly]="true" [cancel]="false"></p-rating>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</p-tabPanel>
+		<p-tabPanel header="Projets">
+			<ng-template pTemplate="header">
+				<i class="pi pi-book"></i>
+				<span style="margin-left: .7em;">Cours</span>
+			</ng-template>
+			<div class="card">
+				<div class="projects">
+					<div class="project-item p1" style="background-image: url('/assets/images/desk1.jpg');">
+						<div class="col about-project">
+							<h2>A random project done</h2>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, tempore. Doloremque quaerat aut cupiditate hic illo, consectetur dolorum, soluta, sed molestias rerum maxime exercitationem nobis mollitia cumque sint quia aperiam?</p>
+							<div class="project-numbers">
+								<div class="row">
+									<div class="col">
+										<i class="pi pi-heart"></i>
+										560
+									</div>
+									<div class="col">
+										<i class="pi pi-star-fill"></i>
+										1,980
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="project-item p2" style="background-image: url('/assets/images/desk2.jpg');">
+						<div class="col about-project">
+							<h2>A random project done</h2>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, tempore. Doloremque quaerat aut cupiditate hic illo, consectetur dolorum, soluta, sed molestias rerum maxime exercitationem nobis mollitia cumque sint quia aperiam?</p>
+							<div class="project-numbers">
+								<div class="row">
+									<div class="col">
+										<i class="pi pi-heart"></i>
+										560
+									</div>
+									<div class="col">
+										<i class="pi pi-star-fill"></i>
+										1,980
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="project-item p3" style="background-image: url('/assets/images/desk3.jpg');">
+						<div class="col about-project">
+							<h2>A random project done</h2>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, tempore. Doloremque quaerat aut cupiditate hic illo, consectetur dolorum, soluta, sed molestias rerum maxime exercitationem nobis mollitia cumque sint quia aperiam?</p>
+							<div class="project-numbers">
+								<div class="row">
+									<div class="col">
+										<i class="pi pi-heart"></i>
+										560
+									</div>
+									<div class="col">
+										<i class="pi pi-star-fill"></i>
+										1,980
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="project-item p4" style="background-image: url('/assets/images/desk4.jpg');">
+						<div class="col about-project">
+							<h2>A random project done</h2>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, tempore. Doloremque quaerat aut cupiditate hic illo, consectetur dolorum, soluta, sed molestias rerum maxime exercitationem nobis mollitia cumque sint quia aperiam?</p>
+							<div class="project-numbers">
+								<div class="row">
+									<div class="col">
+										<i class="pi pi-heart"></i>
+										560
+									</div>
+									<div class="col">
+										<i class="pi pi-star-fill"></i>
+										1,980
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</p-tabPanel>
+		<p-tabPanel header="Stagiaires">
+			<ng-template pTemplate="header">
+				<i class="pi pi-users"></i>
+				<span style="margin-left: .7em;">Stagiaires</span>
+			</ng-template>
+			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+				atque corrupti quos dolores et quas molestias excepturi sint occaecati
+				cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+				dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+				Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+		</p-tabPanel>
+		<p-tabPanel header="Avis">
+			<ng-template pTemplate="header">
+				<i class="pi pi-comments"></i>
+				<span style="margin-left: .7em;">Avis</span>
+			</ng-template>
+			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+				atque corrupti quos dolores et quas molestias excepturi sint occaecati
+				cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+				dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+				Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+		</p-tabPanel>
+	</p-tabView>
+</div>

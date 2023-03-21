@@ -1,0 +1,12 @@
+<p-toast></p-toast>
+<p-editor [(ngModel)]="text" [style]="{'height':'150px'}"></p-editor>
+<div align="right" style="padding-top: 8px;">
+	<!-- <button #btn type="button" pButton icon="pi pi-bars" label="Envoyer un badge"
+		(click)="menu.toggle($event)"></button> -->
+		<p-button #btn label="Envoyer un badge" icon="pi pi-bars" iconPos="left" styleClass="p-button-secondary" (click)="menu.toggle($event)"></p-button>
+	<p-slideMenu #menu [model]="items" [popup]="true" [viewportHeight]="250"
+		[style]="{'min-width':'200px', 'font-size': '12pt'}"></p-slideMenu>
+		&nbsp;
+	<button #btn type="button" syleClass="p-button-secondary" pButton icon="pi pi-telegram" label="Envoyer le message"
+	(click)="sendMessage()"></button>
+</div>

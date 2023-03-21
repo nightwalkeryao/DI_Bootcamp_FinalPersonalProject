@@ -1,0 +1,89 @@
+.row{
+	display: flex;
+	flex-direction: row;
+	gap: 2em;
+	flex-wrap: wrap;
+}
+.title{
+	font-size: 12pt !important;
+	em{
+		background-color: #FFC107;
+		padding-inline: 6px;
+		border-radius: 4px;
+	}
+}
+.summary{
+	p{
+		font-size: 11pt;
+		font-weight: 100;
+		line-height: 24px;
+		.pi{
+			margin-right: .65em;
+		}
+		span{
+			color: rgb(47, 47, 47) !important;
+		}
+	}
+}
+.skills-block {
+	padding-top: 1.5em;
+}
+.skill-card{
+	width: 22.7% !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border: 1px solid #bbb;
+	background-color: rgba(187, 187, 187, 0.397);
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.skill-name{
+	font-size: 17pt;
+	font-weight: 500;
+}
+.skill-description{
+	font: small;
+}
+.project-item {
+	width: 49%;
+	min-height: 450px;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.projects{
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+.about-project{
+	background-color: rgba(255, 255, 255, 0.9045);
+	padding: 12px;
+	position: absolute;
+	bottom: 0;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	h2{
+		color: #FFC107;
+	}
+	.row{
+		font-size: medium !important;
+		margin-top: 12px;
+		.col{
+			width: 45%;
+			text-align: center;
+			.pi{
+				margin-right: .6em;
+			}
+		}
+	}
+	p{
+		font-size: small;
+	}
+}
+.ml-2{
+	margin-left: 1em;
+}

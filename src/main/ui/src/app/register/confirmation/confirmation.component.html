@@ -1,0 +1,34 @@
+<div class="stepsdemo-content">
+    <p-card>
+        <ng-template pTemplate="title">
+            Confirmation
+        </ng-template>
+        <ng-template pTemplate="subtitle">
+            Vérifiez vos informations
+        </ng-template>
+        <ng-template pTemplate="content">
+            <div class="field col-12">
+                <label for="name">Nom complet</label>
+                <b>{{basics.firstname ? basics.firstname : '-'}} {{basics.lastname ? basics.lastname : '-'}}</b>
+            </div>
+            <div class="field col-12">
+                <label for="name">Nom d'utilisateur</label>
+                <b>{{user.username ? user.username : '-'}}</b>
+            </div>
+            <div class="field col-12">
+                <label for="email">E-mail</label>
+                <b>{{user.email ? user.email : '-'}}</b>
+            </div>
+            <div class="field col-12">
+                <label for="role">Rôle</label>
+                <b>{{user.role ? selectedRole.name : '-'}}</b>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <div class="grid grid-nogutter justify-content-space-between">
+                <p-button label="Précédent" (onClick)="prevPage()" icon="pi pi-angle-left"></p-button>
+                <p-button label="Confirmer" (onClick)="complete()" icon="pi pi-save" iconPos="right" styleClass="p-button-secondary"></p-button>
+            </div>
+        </ng-template>
+    </p-card>
+</div>

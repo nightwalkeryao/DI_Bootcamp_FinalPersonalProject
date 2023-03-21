@@ -1,0 +1,17 @@
+.grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 16px;
+	img{
+		border-radius: 50%;
+		display: block;
+		margin-inline: auto;
+		width: 128px;
+	}
+	.user-card{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

@@ -1,0 +1,27 @@
+.btn {
+	border-radius: 10px;
+	// font-size: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem 1.4rem 0.5rem 1.4rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: black;
+	width: 96% !important;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 0.5em;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn.colored {
+	background-color: rgb(255, 187, 51);
+}
+
+.btn.light {
+	border: 2px solid rgb(195, 195, 195);
+	padding: 0.5rem 1.4rem 0.5rem 1.4rem;
+}

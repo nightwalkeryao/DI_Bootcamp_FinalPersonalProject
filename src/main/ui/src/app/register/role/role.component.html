@@ -1,0 +1,24 @@
+<div class="stepsdemo-content">
+    <p-card>
+        <ng-template pTemplate="title">
+            Rôle
+        </ng-template>
+        <ng-template pTemplate="subtitle">
+            Sélectionnez un rôle
+        </ng-template>
+        <ng-template pTemplate="content">
+            <div class="p-fluid -formgrid -grid">
+                <div *ngFor="let role of roles" class="field-checkbox" style="margin-bottom: .85em;">
+					<p-radioButton [inputId]="role.name" name="selectedRole" [value]="role.id.toString()" [(ngModel)]="selectedRole"></p-radioButton>
+					<label [for]="role.name"> {{role.name}} </label>
+				</div>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <div class="grid grid-nogutter justify-content-space-between">
+                <p-button label="Précédent" (onClick)="prevPage()" icon="pi pi-angle-left"></p-button>
+                <p-button label="Suivant" (onClick)="nextPage()" icon="pi pi-angle-right" iconPos="right"></p-button>
+            </div>
+        </ng-template>
+    </p-card>
+</div>

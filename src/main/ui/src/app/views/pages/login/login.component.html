@@ -1,0 +1,24 @@
+<div class="wrapper">
+	<div>
+		<h1>Connexion</h1>
+		<div class="illu">
+			<img src='https://i.postimg.cc/1332nh5s/undraw-Login-re-4vu2.png' border='0' alt='undraw-Login-re-4vu2'/>
+		</div>
+		<form class="inputs">
+			<div class="form-group">
+				<label for="email">Nom d'utilisateur</label>
+				<input type="text" class="text-field" id="email" [(ngModel)]="username"  name="username"/>
+			</div>
+			<div class="form-group">
+				<label for="password">Mot de passe</label>
+				<input type="password" class="text-field" id="password" [(ngModel)]="password"  name="password"/>
+			</div>
+			<div class="form-group">
+				<a [routerLink]="'/forgot-password'">Mot de passe oublié</a>
+			</div>
+			<btn [text]="'Connexion'" (click)="handleSubmit($event)"></btn>
+			<br>
+			<btn [routerLink]="'/register'" [theme]="'light'" [text]="'Céer un compte'"></btn>
+		</form>
+	</div>
+</div>

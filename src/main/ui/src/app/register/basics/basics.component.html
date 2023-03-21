@@ -1,0 +1,44 @@
+<div class="stepsdemo-content">
+	<p-card>
+		<ng-template pTemplate="title">
+			Informations de base
+		</ng-template>
+		<ng-template pTemplate="subtitle">
+			Entrez vos informations personnelles
+		</ng-template>
+		<ng-template pTemplate="content">
+			<div class="p-fluid formgrid grid">
+				<div class="field col-6">
+					<label for="firstname">Prénom (s)</label>
+					<input type="text" id="firstname" required pInputText [(ngModel)]="basics.firstname" />
+				</div>
+				<div class="field col-6">
+					<label for="lastname">Nom</label>
+					<input type="text" id="lastname" required pInputText [(ngModel)]="basics.lastname" />
+				</div>
+				<div class="field col-6" *ngIf="(role != '2')">
+					<label for="company">Entreprise</label>
+					<input type="text" id="company" pInputText [(ngModel)]="basics.company" />
+				</div>
+				<div class="field col-6" *ngIf="(role != '2')">
+					<label for="jobTitle">Poste</label>
+					<input type="text" id="jobTitle" pInputText [(ngModel)]="basics.jobTitle" />
+				</div>
+				<div class="field col-6">
+					<label for="city">Ville</label>
+					<input type="text" id="city" pInputText [(ngModel)]="basics.city" />
+				</div>
+				<div class="field col-6">
+					<label for="phoneNumber">Téléphone</label>
+					<input type="tel" id="phoneNumber" pInputText [(ngModel)]="basics.phoneNumber" />
+				</div>
+			</div>
+		</ng-template>
+		<ng-template pTemplate="footer">
+			<div class="grid grid-nogutter justify-content-space-between">
+				<p-button label="Précédent" (onClick)="prevPage()" icon="pi pi-angle-left"></p-button>
+				<p-button label="Suivant" (onClick)="nextPage()" icon="pi pi-angle-right" iconPos="right"></p-button>
+			</div>
+		</ng-template>
+	</p-card>
+</div>
