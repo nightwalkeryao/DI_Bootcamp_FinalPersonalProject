@@ -33,6 +33,7 @@ import { MessagesModule } from 'primeng/messages';
 import { ConversationComponent } from './views/components/conversation/conversation.component';
 import { SlideMenuModule } from 'primeng/slidemenu';
 import { EditorModule } from 'primeng/editor';
+import { BadgeModule } from 'primeng/badge';
 
 @NgModule({
 	declarations: [
@@ -69,6 +70,7 @@ import { EditorModule } from 'primeng/editor';
 		MessagesModule,
 		SlideMenuModule,
 		EditorModule,
+		BadgeModule,
 	],
 	providers: [
 		HttpService,

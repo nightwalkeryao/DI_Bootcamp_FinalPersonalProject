@@ -51,9 +51,9 @@
 			</ng-template>
 			<div class="card">
 				<div class="projects">
-					<div class="project-item p1" style="background-image: url('/assets/images/desk1.jpg');">
+					<div class="project-item p1" style="background-image: url('/assets/images/p1.jpg');">
 						<div class="col about-project">
-							<h2>A random project done</h2>
+							<h2>A random course I am learning</h2>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, tempore. Doloremque quaerat aut cupiditate hic illo, consectetur dolorum, soluta, sed molestias rerum maxime exercitationem nobis mollitia cumque sint quia aperiam?</p>
 							<div class="project-numbers">
 								<div class="row">
@@ -69,9 +69,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="project-item p2" style="background-image: url('/assets/images/desk2.jpg');">
+					<div class="project-item p2" style="background-image: url('/assets/images/p2.webp');">
 						<div class="col about-project">
-							<h2>A random project done</h2>
+							<h2>A random course I am learning</h2>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, tempore. Doloremque quaerat aut cupiditate hic illo, consectetur dolorum, soluta, sed molestias rerum maxime exercitationem nobis mollitia cumque sint quia aperiam?</p>
 							<div class="project-numbers">
 								<div class="row">
@@ -87,9 +87,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="project-item p3" style="background-image: url('/assets/images/desk3.jpg');">
+					<div class="project-item p3" style="background-image: url('/assets/images/p3.jpg');">
 						<div class="col about-project">
-							<h2>A random project done</h2>
+							<h2>A random course I am learning</h2>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, tempore. Doloremque quaerat aut cupiditate hic illo, consectetur dolorum, soluta, sed molestias rerum maxime exercitationem nobis mollitia cumque sint quia aperiam?</p>
 							<div class="project-numbers">
 								<div class="row">
@@ -105,9 +105,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="project-item p4" style="background-image: url('/assets/images/desk4.jpg');">
+					<div class="project-item p4" style="background-image: url('/assets/images/p4.webp');">
 						<div class="col about-project">
-							<h2>A random project done</h2>
+							<h2>A random course I am learning</h2>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, tempore. Doloremque quaerat aut cupiditate hic illo, consectetur dolorum, soluta, sed molestias rerum maxime exercitationem nobis mollitia cumque sint quia aperiam?</p>
 							<div class="project-numbers">
 								<div class="row">
@@ -126,16 +126,31 @@
 				</div>
 			</div>
 		</p-tabPanel>
-		<p-tabPanel header="Stagiaires">
+		<p-tabPanel header="Badges">
 			<ng-template pTemplate="header">
-				<i class="pi pi-users"></i>
-				<span style="margin-left: .7em;">Stagiaires</span>
+				<i class="pi pi-verified"></i>
+				<span style="margin-left: .7em;">Badges</span>
 			</ng-template>
-			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-				atque corrupti quos dolores et quas molestias excepturi sint occaecati
-				cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
-				dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-				Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+			<p-messages severity="info">
+				<ng-template pTemplate>
+					<img src="https://i.postimg.cc/7LFgncR4/fox.png" width="32" />
+					<div class="ml-2">Vous avez actuellement <b>123 dc</b>. Vous pouvez les <a href="#" class="text-orange-300"><b>convertir</b></a> ou bien <a href="#" class="text-orange-300"><b>en acheter</b></a> quand vous le souhaitez.</div>
+				</ng-template>
+			</p-messages>
+			<div class="badges-list">
+				<div class="badge-item">
+					<i class="pi pi-circle-fill mr-4 p-text-secondary" pBadge [value]="'4'" severity="info"></i>
+					<p>Merci 1x</p>
+				</div>
+				<div class="badge-item">
+					<i class="pi pi-box mr-4 p-text-secondary" pBadge [value]="'7'" severity="info"></i>
+					<p>Merci 2x</p>
+				</div>
+				<div class="badge-item">
+					<i class="pi pi-bitcoin mr-4 p-text-secondary" pBadge [value]="'13'" severity="warning"></i>
+					<p>Merci 5x</p>
+				</div>
+			</div>
 		</p-tabPanel>
 		<p-tabPanel header="Avis">
 			<ng-template pTemplate="header">
