@@ -1,0 +1,5 @@
+club.devs.api
+club.devs.api.controllers
+club.devs.api.dtos
+club.devs.api.models
+club.devs.api.repositories

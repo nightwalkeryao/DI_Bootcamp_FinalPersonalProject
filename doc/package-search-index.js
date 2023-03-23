@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"club.devs.api"},{"l":"club.devs.api.controllers"},{"l":"club.devs.api.dtos"},{"l":"club.devs.api.models"},{"l":"club.devs.api.repositories"}];updateSearchResults();
